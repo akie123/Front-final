@@ -82,23 +82,29 @@ export default function Index({ state, handleSubmit,handleInputChange,error })
 
                 <div className="form-group">
                     <label >Specialization</label>
-                        <select style={{padding:"2%"}} id="inputState" className="form-control"
-                                value={state.spec}
-                                onChange={handleInputChange}
-                                name="spec">
-                            <option value="">Select Specialization</option>
-                            <option value="av">Ayurveda</option>
-                            <option value="gp">General Physician</option>
-                            <option value="dt">Dentist</option>
-                            <option value="cd">Cardiology</option>
-                            <option value="dm">Dermatology</option>
-                            <option value="nl">Neurology</option>
-                            <option value="ge">Gastroenterology</option>
-                            <option value="on">Oncology</option>
-                            <option value="obgyn">Obstetrics and Gynecology</option>
-                            <option value="or">Orthopedics</option>
-                            <option value="py">Psychiatry</option>
-                        </select>
+                    <select
+                        style={{ padding: "2%" }}
+                        id="inputState"
+                        className="form-control"
+                        value={state.spec}
+                        onChange={handleInputChange}
+                        name="spec"
+                    >
+                        <option value="">Select Specialization</option>
+                        <option value="Ayurveda">Ayurveda</option>
+                        <option value="General Physician">General Physician</option>
+                        <option value="Dentist">Dentist</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Obstetrics and Gynecology">
+                            Obstetrics and Gynecology
+                        </option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Psychiatry">Psychiatry</option>
+                    </select>
                         {error.spec && <p className="text-danger" style={{margin:"0"}}>{error.spec}</p>}
 
                 </div>

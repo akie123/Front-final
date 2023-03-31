@@ -114,7 +114,7 @@ export default function Cancel(){
                                             padding: "0.6rem",
                                             borderRadius: "8px",
                                             cursor: "pointer",
-                                            backgroundColor: "#D2042D",
+                                            backgroundColor: "#a13a4c",
                                             color: "white",
                                         }}
                                         onClick={() => {

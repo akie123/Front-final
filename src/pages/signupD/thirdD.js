@@ -141,7 +141,7 @@ export default function Index({ state, handleSubmit,handleInputChange,error })
                         <div className="col-10">
                             <select className="form-control" value={state.gender}
                                     onChange={handleInputChange} name="gender">
-                                <option value="none" disabled selected hidden>Gender</option>
+                                <option value="none"  selected>Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
