@@ -1,0 +1,14 @@
+.err{
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+}
+
+.mainbox{
+    background-color: #655D8A;
+    width:  100vw;
+    height:  100vh;
+    overflow-x: hidden;
+    padding-top: 11%;
+    padding-left: 5%;
+}

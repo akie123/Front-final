@@ -1,0 +1,472 @@
+{
+  "patients": [
+    {
+      "email": "gubbasainithin@gmail.com",
+      "password": "Password123",
+      "name": "Nithin",
+      "aadhdarnumber": "939393939393",
+      "phonenumber": "9999999918",
+      "gender": "male",
+      "dob": "2022-10-13",
+      "allergies": "none",
+      "past_medical_history": "none",
+      "appointments": [
+        {
+          "date": "2022-11-02T17:57:58.367Z",
+          "time": "21:30-22:00",
+          "doctor": {
+            "name": "Doctor-1",
+            "qualification": "MBBS",
+            "department": "General Physician",
+            "id": "1"
+          },
+          "id": "1"
+        },
+        {
+          "date": "2022-10-28T17:57:58.367Z",
+          "time": "21:30-22:00",
+          "doctor": {
+            "name": "Doctor-1",
+            "qualification": "MBBS",
+            "department": "General Physician",
+            "id": "1"
+          },
+          "id": "2"
+        },
+        {
+          "date": "2022-10-31T17:57:58.367Z",
+          "time": "21:00-21:30",
+          "doctor": {
+            "name": "Doctor-1",
+            "qualification": "MBBS",
+            "department": "General Physician",
+            "id": "1"
+          },
+          "id": "1"
+        }
+      ],
+      "messages": [
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "1"
+        },
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "2"
+        },
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "3"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "email": "rohith@gmail.com",
+      "password": "RBpatient@20",
+      "name": "Rohith Boppey",
+      "aadhdarnumber": "353840085308",
+      "phonenumber": "9533666898",
+      "gender": "male",
+      "dob": "2002-10-20",
+      "allergies": "I'm allergic to Bargav.",
+      "past_medical_history": "Nothing.",
+      "appointments": [],
+      "messages": [],
+      "id": 5
+    },
+    {
+      "email": "sribargavatejaswi.k20@iiits.in",
+      "password": "Password1",
+      "name": "Bargav",
+      "aadhdarnumber": "989898989898",
+      "phonenumber": "9898989898",
+      "gender": "male",
+      "dob": "2022-12-10",
+      "allergies": "none",
+      "past_medical_history": "none",
+      "appointments": [],
+      "messages": [],
+      "id": 6
+    },
+    {
+      "email": "bhargavkoduri123@gmail.com",
+      "password": "Password1",
+      "name": "Tejaswi",
+      "aadhdarnumber": "984898989811",
+      "phonenumber": "94945519878",
+      "gender": "male",
+      "dob": "2022-12-09",
+      "allergies": "none",
+      "past_medical_history": "none",
+      "appointments": [],
+      "messages": [],
+      "id": 7
+    }
+  ],
+  "doctors": [
+    {
+      "email": "doc1@gmail.com",
+      "password": "Password1234",
+      "name": "Royal",
+      "aadhdarnumber": "949494949494",
+      "phonenumber": "9848795699",
+      "gender": "Male",
+      "dob": "2004-11-04",
+      "qualification": "MBBS",
+      "department": "Mental wellness",
+      "experience": "7y",
+      "id": 1,
+      "charges": "600",
+      "appointments": [
+        {
+          "date": "2022-12-08T17:57:58.367Z",
+          "time": "21:30-22:00",
+          "patient": {
+            "name": "Patient-1",
+            "id": "1"
+          }
+        },
+        {
+          "date": "2022-12-08T17:57:58.367Z",
+          "time": "21:00-21:30",
+          "patient": {
+            "name": "Patient-1",
+            "id": "1"
+          }
+        },
+        {
+          "date": "2022-11-30T17:57:58.367Z",
+          "time": "21:00-21:30",
+          "patient": {
+            "name": "Patient-1",
+            "id": "1"
+          }
+        }
+      ],
+      "slots": [
+        {
+          "time": "20:30-21:00",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        },
+        {
+          "time": "21:00-21:30",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        },
+        {
+          "time": "21:30-22:00",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        }
+      ],
+      "messages": [
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "1"
+        },
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "2"
+        },
+        {
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "3"
+        }
+      ],
+      "timeslots": [
+        {
+          "time": "09:00-09:30",
+          "available": "true",
+          "id": "1"
+        },
+        {
+          "time": "09:30-10:00",
+          "available": "true",
+          "id": "2"
+        },
+        {
+          "time": "10:00-10:30",
+          "available": "false",
+          "id": "3"
+        },
+        {
+          "time": "10:30-11:00",
+          "available": "false",
+          "id": "4"
+        },
+        {
+          "time": "11:00-11:30",
+          "available": "false",
+          "id": "5"
+        },
+        {
+          "time": "11:30-12:00",
+          "available": "false",
+          "id": "6"
+        },
+        {
+          "time": "18:30-19:00",
+          "available": "false",
+          "id": "7"
+        },
+        {
+          "time": "19:00-19:30",
+          "available": "false",
+          "id": "8"
+        },
+        {
+          "time": "19:30-20:00",
+          "available": "true",
+          "id": "9"
+        },
+        {
+          "time": "20:00-20:30",
+          "available": "false",
+          "id": "10"
+        },
+        {
+          "time": "20:30-21:00",
+          "available": "false",
+          "id": "11"
+        },
+        {
+          "time": "21:00-21:30",
+          "available": "false",
+          "id": "12"
+        },
+        {
+          "time": "21:30-22:00",
+          "available": "false",
+          "id": "13"
+        }
+      ]
+    },
+    {
+      "email": "doc2@gmail.com",
+      "password": "Password1",
+      "name": "Doctor 2",
+      "aadhdarnumber": "123456789012",
+      "phonenumber": "1234567890",
+      "gender": "male",
+      "dob": "2004-09-17",
+      "qualification": "MBBS",
+      "department": "Dermatology",
+      "experience": "4y",
+      "slots": [
+        {
+          "time": "20:00-20:30",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        },
+        {
+          "time": "20:30-21:00",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        },
+        {
+          "time": "21:00-21:30",
+          "avb": true,
+          "details": {
+            "patient-name": "",
+            "date": ""
+          }
+        }
+      ],
+      "appointments": [],
+      "messages": [],
+      "timeslots": [
+        {
+          "time": "09:00-09:30",
+          "available": "true",
+          "id": "1"
+        },
+        {
+          "time": "09:30-10:00",
+          "available": "false",
+          "id": "2"
+        },
+        {
+          "time": "10:00-10:30",
+          "available": "false",
+          "id": "3"
+        },
+        {
+          "time": "10:30-11:00",
+          "available": "false",
+          "id": "4"
+        },
+        {
+          "time": "11:00-11:30",
+          "available": "false",
+          "id": "5"
+        },
+        {
+          "time": "11:30-12:00",
+          "available": "false",
+          "id": "6"
+        },
+        {
+          "time": "18:30-19:00",
+          "available": "false",
+          "id": "7"
+        },
+        {
+          "time": "19:00-19:30",
+          "available": "false",
+          "id": "8"
+        },
+        {
+          "time": "19:30-20:00",
+          "available": "true",
+          "id": "9"
+        },
+        {
+          "time": "20:00-20:30",
+          "available": "false",
+          "id": "10"
+        },
+        {
+          "time": "20:30-21:00",
+          "available": "false",
+          "id": "11"
+        },
+        {
+          "time": "21:00-21:30",
+          "available": "false",
+          "id": "12"
+        },
+        {
+          "time": "21:30-22:00",
+          "available": "false",
+          "id": "13"
+        }
+      ],
+      "charges": 500,
+      "id": 2
+    }
+  ],
+  "dupdoctors": [
+    {
+      "email": "aalhadakate@gmail.com",
+      "password": "Password1",
+      "name": "Aalhad",
+      "aadhdarnumber": "123456789012",
+      "phonenumber": "1234567890",
+      "gender": "male",
+      "dob": "2004-09-02",
+      "qualification": "MBBS",
+      "department": "Gynecology",
+      "experience": "6y",
+      "slots": [],
+      "appointments": [],
+      "messages": [],
+      "timeslots": [
+        {
+          "time": "09:00-09:30",
+          "available": "true",
+          "id": "1"
+        },
+        {
+          "time": "09:30-10:00",
+          "available": "false",
+          "id": "2"
+        },
+        {
+          "time": "10:00-10:30",
+          "available": "false",
+          "id": "3"
+        },
+        {
+          "time": "10:30-11:00",
+          "available": "false",
+          "id": "4"
+        },
+        {
+          "time": "11:00-11:30",
+          "available": "false",
+          "id": "5"
+        },
+        {
+          "time": "11:30-12:00",
+          "available": "false",
+          "id": "6"
+        },
+        {
+          "time": "18:30-19:00",
+          "available": "false",
+          "id": "7"
+        },
+        {
+          "time": "19:00-19:30",
+          "available": "false",
+          "id": "8"
+        },
+        {
+          "time": "19:30-20:00",
+          "available": "true",
+          "id": "9"
+        },
+        {
+          "time": "20:00-20:30",
+          "available": "false",
+          "id": "10"
+        },
+        {
+          "time": "20:30-21:00",
+          "available": "false",
+          "id": "11"
+        },
+        {
+          "time": "21:00-21:30",
+          "available": "false",
+          "id": "12"
+        },
+        {
+          "time": "21:30-22:00",
+          "available": "false",
+          "id": "13"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "admin": [
+    {
+      "name": "Sai Nithin",
+      "email": "sainithin.g20@iiits.in",
+      "phonenumber": "9090909090",
+      "query": "Issue with my account",
+      "id": 1
+    },
+    {
+      "name": "Bargav",
+      "email": "bhargavkoduri123@gmail.com",
+      "phonenumber": "94949551878",
+      "query": "How to book an appointment?",
+      "id": 2
+    }
+  ],
+  "admin_cred": [
+    {
+      "email": "admin@gmail.com",
+      "password": "Password1"
+    }
+  ]
+}

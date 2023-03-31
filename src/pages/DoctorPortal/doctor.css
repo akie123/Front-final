@@ -1,0 +1,94 @@
+.doctor-list-div:hover{
+    cursor: pointer;
+}
+
+.doctor-icon{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.doctor-title{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.doctor-navigation{
+     min-height: 90vh;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    bottom: 20px;
+    width: 300px;
+    background-color: #655D8A;
+    box-sizing: initial;
+    border-radius: 10px;
+    border-left: 5px solid #655D8A;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+.doctor-navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 40px;
+}
+
+.doctor-navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.doctor-navigation ul .active{
+    background: #fff;
+}
+
+.doctor-navigation ul li div{
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: aliceblue;
+}
+
+.doctor-navigation ul li.active div{
+   color: #333;
+}
+
+.doctor-icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 62px;
+    text-align: center;
+}
+
+.doctor-navigation ul li div i {
+    font-size: 1rem;
+}
+
+.doctor-title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.doctor-toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #655D8A;
+    border-radius: 10px;
+    cursor: pointer;
+}
