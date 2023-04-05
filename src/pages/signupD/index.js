@@ -33,7 +33,7 @@ export default function Index() {
         state:"",
         gender:"",
         reg:"",
-        year:"",
+        exp:"",
         stateC:"",
         spec:"",
         otp :""
@@ -69,7 +69,7 @@ export default function Index() {
         state:"",
         gender:"",
         reg:"",
-        year:"",
+        exp:"",
         stateC:"",
         spec:""
     })
@@ -183,7 +183,6 @@ export default function Index() {
 
         await userSchema2.validate({
             reg:state.reg,
-            year:state.year,
             stateC:state.stateC,
             spec:state.spec,
             qualification:state.qualification
@@ -279,6 +278,8 @@ export default function Index() {
                                         {page.page3=="1" &&   <Pat3 state={state} handleSubmit={handleSubmit2}  handleInputChange={ handleInputChange} error={error}   /> }
                                         { page.page4=="1" && <Pat5 state={state} handleSubmit={handleSubmit3}  handleInputChange={ handleInputChange} error={error} />}
                                         {page.page5=="1" && <Pat4/>}
+                                        {/*<Pat5 state={state} handleSubmit={handleSubmit3}  handleInputChange={ handleInputChange} error={error} />*/}
+
 
 
                                     </div>

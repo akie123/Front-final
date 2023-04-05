@@ -62,7 +62,7 @@ const Modal = (props) => {
 
                 Swal.fire({
                     title: "Success",
-                    text: "Password Updated",
+                    text: "Appointment Booked",
                     icon: "success",
                 });
             }
@@ -87,7 +87,7 @@ const Modal = (props) => {
                     style={{ width: "250px", marginTop: "1rem" }}
                     className="btn btn-success"
                     data-toggle="modal"
-                    data-target="#book"
+                    data-target={"#book"+ props.doctor_id}
                     onClick={() => {
                         setSlot("");
                     }}
@@ -97,7 +97,7 @@ const Modal = (props) => {
             </div>
             <div
                 className="modal fade"
-                id="book"
+                id={"book"+props.doctor_id}
                 tabindex="-1"
                 role="dialog"
                 aria-labelledby="exampleModalLabel"

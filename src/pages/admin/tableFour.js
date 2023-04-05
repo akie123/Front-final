@@ -10,7 +10,11 @@ const TableFour = () => {
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-    fetch('http://localhost:5000/admin/doctors')
+    fetch('http://localhost:5000/admin/doctors',{
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+    })
       .then(response => response.json())
       .then(docdata => setdocData(docdata))
       // .then(console.log(docdata))
@@ -20,7 +24,11 @@ const TableFour = () => {
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-    fetch('http://localhost:5000/admin/patients')
+    fetch('http://localhost:5000/admin/patients',{
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+    })
       .then(response => response.json())
       .then(patdata => setpatData(patdata))
       // .then(console.log(patdata))
@@ -29,7 +37,11 @@ const TableFour = () => {
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-    fetch('http://localhost:5000/admin/queries')
+    fetch('http://localhost:5000/admin/queries',{
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+    })
       .then(response => response.json())
       .then(querydata => setQueryData(querydata))
       // .then(console.log(querydata))
@@ -100,7 +112,7 @@ const TableFour = () => {
     <>
     <h1 style={{marginLeft:'100px'}}>Statistics</h1>
     <div style={{marginTop:'100px'}}>
-    <p style={{marginLeft:'200px',marginTop:'50px'}}>Number of Appointments:{numberOfApp}</p>
+    {/*<p style={{marginLeft:'200px',marginTop:'50px'}}>Number of Appointments:{numberOfApp}</p>*/}
     <p style={{marginLeft:'200px',marginTop:'50px'}}>Number of Queries:{numOfQueries}</p>
     <p style={{marginLeft:'200px',marginTop:'50px'}}>Number of Bookings:{totalPatients}</p>
     </div>
