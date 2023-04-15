@@ -5,6 +5,7 @@ import Doctor from './pages/DoctorPortal'
 import Admin from "./pages/admin/index"
 import Signup1 from './pages/signup1'
 import SignupD from './pages/signupD'
+import Appointments from "./pages/appointments";
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
