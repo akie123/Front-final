@@ -1,5 +1,5 @@
 import {useContext, useEffect, useState} from "react";
-
+import {SERVER_URL} from "../../constants"
 import {
   MDBBadge,
   MDBTable,
@@ -17,7 +17,7 @@ export default function Schedule(){
 
         const { id, jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-        axios.get(`http://localhost:5000/doctor/${id}/getschedule`,{
+        axios.get(`${SERVER_URL}/doctor/${id}/getschedule`,{
             headers: {
                 Authorization: `Bearer ${jwtToken}`,
             }})
@@ -48,7 +48,7 @@ export default function Schedule(){
                   let arr=[...data]
                   arr[i].avb=true
                   setData(arr);
-                  axios.post(`http://localhost:5000/doctor/${id}/updateschedule`,data,{
+                  axios.post(`${SERVER_URL}/doctor/${id}/updateschedule`,data,{
                       headers: {
                           Authorization: `Bearer ${jwtToken}`,
                       }})

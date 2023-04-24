@@ -14,7 +14,7 @@ export default function TableThree() {
     console.log("Called delete function",id)
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-    axios.delete(`http://localhost:5000/admin/verifieddoctors/${id}`,{
+    axios.delete(`${SERVER_URL}/admin/verifieddoctors/${id}`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
@@ -32,7 +32,7 @@ export default function TableThree() {
     console.log("Called delete function",id)
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
-    axios.delete(`http://localhost:5000/admin/patients/${id}`,{
+    axios.delete(`${SERVER_URL}/admin/patients/${id}`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },

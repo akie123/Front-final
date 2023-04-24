@@ -63,11 +63,9 @@ function SideBarr(props) {
             <br />
             <li id="removePat">
               <div onClick={() => props.setStatus("successfulthree")}>
-                <i className="fa fa-wheelchair"></i>
+                <i style={{marginLeft: "10px"}} className="bi bi-bar-chart-fill"></i>
                 <span className="links_name">
-                  Remove
-                  <br />
-                  patient
+                Statistics
                 </span>
               </div>
               <span className="tooltip">Remove patient</span>

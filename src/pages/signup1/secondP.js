@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import Swal from "sweetalert2";
+import {SERVER_URL} from "../../constants";
 
 export default function Index({ state, handleSubmit, handleInputChange }) {
     const [timer, setTimer] = useState(60);
@@ -30,7 +31,7 @@ export default function Index({ state, handleSubmit, handleInputChange }) {
     const handleResendClick = () => {
         setDisableResend(true);
         setTimer(60);
-        axios.post("http://localhost:5000/verify/getcode", {
+        axios.post(`${SERVER_URL}/verify/getcode`, {
                 number: state.number,
                 channel: 'sms'
             }

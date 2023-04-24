@@ -12,7 +12,7 @@ import userSchema2 from "../../Validations/forthD";
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-
+import {SERVER_URL} from "../../constants";
 
 
 export default function Index() {
@@ -119,7 +119,7 @@ export default function Index() {
             gender:state.gender
         },{ abortEarly: false }).then(async() => {
 
-            axios.get(`http://localhost:5000/register/email/${state.email}`)
+            axios.get(`${SERVER_URL}/register/email/${state.email}`)
                 .then(response => {
                     console.log(response.data)
                     if (response.data.check=="notfound") {
@@ -147,7 +147,7 @@ export default function Index() {
     };
     const handleSubmit1 = async (event) => {
         event.preventDefault();
-        axios.post("http://localhost:5000/verify/verifycode", {
+        axios.post(`${SERVER_URL}/verify/verifycode`, {
                 number: state.number,
                 code:state.otp
             }

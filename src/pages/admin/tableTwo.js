@@ -14,7 +14,7 @@ export default function TableTwo() {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
 
     axios
-      .put(`http://localhost:5000/admin/doctors/${id}`, { verified: true },{
+      .put(`${SERVER_URL}/admin/doctors/${id}`, { verified: true },{
         headers: {
           Authorization: `Bearer ${jwtToken}`,
         },

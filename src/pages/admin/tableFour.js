@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import { queries } from '@testing-library/react';
+import {SERVER_URL} from "../../constants"
 
 const TableFour = () => {
   const [docdata, setdocdata] = useState([]);
@@ -11,7 +12,7 @@ const TableFour = () => {
 
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
-    fetch('http://localhost:5000/admin/doctors',{
+    fetch(`${SERVER_URL}/admin/doctors`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
@@ -23,7 +24,7 @@ const TableFour = () => {
 
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
-    fetch('http://localhost:5000/admin/verifieddoctors',{
+    fetch(`${SERVER_URL}/admin/verifieddoctors`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
@@ -35,7 +36,7 @@ const TableFour = () => {
 
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
-    fetch('http://localhost:5000/admin/patients',{
+    fetch(`${SERVER_URL}/admin/patients`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
@@ -46,7 +47,7 @@ const TableFour = () => {
   }, []);
   useEffect(() => {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
-    fetch('http://localhost:5000/admin/queries',{
+    fetch(`${SERVER_URL}/admin/queries`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },

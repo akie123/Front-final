@@ -9,7 +9,7 @@ export default function TableOne() {
   function deleteQuery(id) {
     console.log("this is id",id);
     let { jwtToken } = JSON.parse(localStorage.getItem("items"));
-    axios.get(`http://localhost:5000/admin/queries/${id}`,{
+    axios.get(`${SERVER_URL}/admin/queries/${id}`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
@@ -27,7 +27,7 @@ export default function TableOne() {
             console.log(result);
             console.log(result.text);
             console.log("Called delete function",id)
-            axios.delete(`http://localhost:5000/admin/queries/${id}`,{
+            axios.delete(`${SERVER_URL}/admin/queries/${id}`,{
               headers: {
                 Authorization: `Bearer ${jwtToken}`,
               },
@@ -84,7 +84,7 @@ export default function TableOne() {
   function getQueries() {
     const { jwtToken } = JSON.parse(localStorage.getItem("items"));
     console.log(jwtToken)
-    axios.get("http://localhost:5000"+"/admin/queries",{
+    axios.get(`${SERVER_URL}/admin/queries`,{
       headers: {
         Authorization: `Bearer ${jwtToken}`,
       },

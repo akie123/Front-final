@@ -10,6 +10,8 @@ import io from "socket.io-client"
 import {useRef, useState,useEffect} from "react";
 import axios from "axios";
 const socket = io.connect('http://localhost:2500')
+import {SERVER_URL} from "../../constants";
+
 export default function Display(props) {
 
   const [ me, setMe ] = useState("")
@@ -19,7 +21,7 @@ export default function Display(props) {
 
     const { id, jwtToken } = JSON.parse(localStorage.getItem("items"));
     socket.on("me", (id1) => {
-      axios.post('http://localhost:5000/addIdD', {
+      axios.post(`${SERVER_URL}/addIdD`, {
         sid:id1,
         id:id
 
