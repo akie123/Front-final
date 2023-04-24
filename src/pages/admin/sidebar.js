@@ -68,7 +68,7 @@ function SideBarr(props) {
                 Statistics
                 </span>
               </div>
-              <span className="tooltip">Remove patient</span>
+              <span className="tooltip">Statistics</span>
             </li>
             <br />
             {/* <li id="home">
