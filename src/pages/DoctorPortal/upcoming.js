@@ -16,6 +16,12 @@ import {
     MDBCardImage,
     MDBTypography
 } from "mdb-react-ui-kit";
+import Peer from "simple-peer"
+import Counter from "./../PatientPortal/counter"
+import io from "socket.io-client"
+import Swal from "sweetalert2";
+import {userSchema} from "../../Validations/firstP";
+const socket = io.connect('http://localhost:2500')
 const minuteSeconds = 60;
 const hourSeconds = 3600;
 const daySeconds = 86400;
@@ -29,12 +35,6 @@ const renderTime = (dimension, time) => {
     );
 };
 
-import Peer from "simple-peer"
-import Counter from "./../PatientPortal/counter"
-import io from "socket.io-client"
-import Swal from "sweetalert2";
-import {userSchema} from "../../Validations/firstP";
-const socket = io.connect('http://localhost:2500')
 export default function Upcoming({Sid}) {
 
     const [data,setData] = useState([])
