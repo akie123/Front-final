@@ -9,8 +9,8 @@ import Peer from "simple-peer"
 import io from "socket.io-client"
 import {useRef, useState,useEffect} from "react";
 import axios from "axios";
-const socket = io.connect('http://localhost:2500')
 import {SERVER_URL} from "../../constants";
+const socket = io.connect('http://localhost:2500')
 
 export default function Display(props) {
 
