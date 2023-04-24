@@ -1,5 +1,5 @@
 import "./patient.css";
-import React, { useEffect, useState, useContext } from "react";
+import React, {useEffect, useState, useContext, useRef} from "react";
 import Display from "./display";
 import { UserContext } from "../../App";
 import axios from "axios";
@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 export const PatientContext = React.createContext()
 
 function Patient() {
+
+
   const [flags, setFlags] = useState({
     upflag: "patient-list  active",
     infoFlag: "patient-list",

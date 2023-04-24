@@ -7,6 +7,7 @@ import {
     MDBTableHead,
     MDBTableBody,
 } from "mdb-react-ui-kit";
+import PrescriptionModal from "./prescriptionModal";
 
 
 export default function Past(){
@@ -22,6 +23,7 @@ export default function Past(){
                 },
             })
             .then((resp) => {
+                console.log("Hello")
                 setPast(resp.data.past);
             });
     }, []);
@@ -86,7 +88,11 @@ export default function Past(){
                                 </td>
                                 <td>
                                     <>
-                                        <button type="button" className="btn btn-outline-secondary btn-sm">View</button>
+                                        <PrescriptionModal
+                                            doctorName={appointment.name}
+                                            id={appointment.id}
+                                            prescription={appointment.prescription}
+                                        />
                                     </>
                                 </td>
                             </tr>

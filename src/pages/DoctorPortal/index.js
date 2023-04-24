@@ -105,7 +105,7 @@ export default function Doctor(){
       if(items){
         if (items.user === "doctor"){
           dispatch({ type: "setTrue" });
-          helperfun();
+         // helperfun();
         }  
       }
     },[])

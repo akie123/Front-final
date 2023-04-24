@@ -1,4 +1,5 @@
 import Calendar from "react-calendar";
+import "./calendar.css"
 import "react-calendar/dist/Calendar.css";
 import { useEffect, useState } from "react";
 import { SERVER_URL } from "../../constants";
@@ -38,7 +39,6 @@ import axios from "axios";
 const Modal = (props) => {
     const [date, setDate] = useState(new Date());
     const Slots = props.slots
-    console.log(Slots)
     const [Slot, setSlot] = useState();
     const maxDate = new Date();
     const bookSlot = () => {
@@ -73,31 +73,9 @@ const Modal = (props) => {
     }, [date]);
     return (
         <>
-            <div style={{ paddingTop: "2rem" }} className="col-5">
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "space-evenly",
-                        width: "250px",
-                    }}
-                >
-
-                </div>
-                <button
-                    style={{ width: "250px", marginTop: "1rem" }}
-                    className="btn btn-success"
-                    data-toggle="modal"
-                    data-target={"#book"+ props.doctor_id}
-                    onClick={() => {
-                        setSlot("");
-                    }}
-                >
-                    Book Appointment
-                </button>
-            </div>
             <div
                 className="modal fade"
-                id={"book"+props.doctor_id}
+                id={"book" + props.doctor_id}
                 tabindex="-1"
                 role="dialog"
                 aria-labelledby="exampleModalLabel"
@@ -122,7 +100,9 @@ const Modal = (props) => {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                            <div
+                                style={{ display: "flex", justifyContent: "space-between" }}
+                            >
                                 <div className="calendar-container">
                                     <Calendar
                                         // onChange={setDate}
@@ -155,7 +135,11 @@ const Modal = (props) => {
                                                         ? "active-slot"
                                                         : "nonactive-slot")
                                                 }
-                                                style={{ width: "150px", height: "40px",fontWeight: "bold" }}
+                                                style={{
+                                                    width: "150px",
+                                                    height: "40px",
+                                                    fontWeight: "bold",
+                                                }}
                                                 onClick={() => {
                                                     setSlot(slot.time);
                                                 }}
@@ -181,94 +165,6 @@ const Modal = (props) => {
                     </div>
                 </div>
             </div>
-            <style jsx>
-                {`
-          .react-calendar {
-            width: 400px;
-            max-width: 100%;
-            background-color: #fff;
-            color: #222;
-            border-radius: 8px;
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.125em;
-          }
-          .react-calendar__navigation button {
-            color: #6f48eb;
-            min-width: 44px;
-            background: none;
-            font-size: 16px;
-            margin-top: 8px;
-          }
-          .react-calendar__navigation button:enabled:hover,
-          .react-calendar__navigation button:enabled:focus {
-            background-color: #f8f8fa;
-          }
-          .react-calendar__navigation button[disabled] {
-            background-color: #f0f0f0;
-          }
-          abbr[title] {
-            text-decoration: none;
-          }
-          .react-calendar__tile:enabled:hover,
-          .react-calendar__tile:enabled:focus {
-            background: #f8f8fa;
-            color: #6f48eb;
-            border-radius: 6px;
-          }
-          .react-calendar__tile--now {
-            background: white;
-            border-radius: 6px;
-          }
-          .react-calendar__tile--now:enabled:hover,
-          .react-calendar__tile--now:enabled:focus {
-            background: #6f48eb33;
-            border-radius: 6px;
-            font-weight: bold;
-            color: #6f48eb;
-          }
-          .react-calendar__tile--hasActive:enabled:hover,
-          .react-calendar__tile--hasActive:enabled:focus {
-            background: #f8f8fa;
-          }
-          .react-calendar__tile--active {
-            background: #6f48eb;
-            border-radius: 6px;
-            font-weight: bold;
-            color: white !important;
-            font-weight: bold !important;
-          }
-          .react-calendar__tile--active:enabled:hover,
-          .react-calendar__tile--active:enabled:focus {
-            background: #6f48eb;
-            color: white;
-            font-weight: bold;
-          }
-          .react-calendar--selectRange .react-calendar__tile--hover {
-            background-color: #f8f8fa;
-          }
-          .react-calendar_navigation_arrow {
-            display: none;
-          }
-          .react-calendar_month-viewdays_day--weekend {
-            color: rgba(16, 16, 16, 0.3);
-          }
-          .slot {
-            outline: none;
-          }
-          .btn:focus {
-            box-shadow: 0 0 0;
-          }
-          .active-slot {
-            background-color: #6f48eb;
-            color: white;
-            font-weight: bold;
-          }
-          .nonactive-slot {
-            background-color: #f0f0f0;
-          }
-        `}
-            </style>
         </>
     );
 };

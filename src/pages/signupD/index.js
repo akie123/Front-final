@@ -1,5 +1,4 @@
 
-
 import Pat1 from "./firstD"
 import Pat2 from "./secondD"
 import Pat3 from "./thirdD"
