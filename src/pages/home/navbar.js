@@ -1,11 +1,12 @@
 import image from "../../assests/photo.png";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch,useSelector } from "react-redux";
 
 
 export default function Navbar() {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const login_state = useSelector(state => state.validauth)
   useEffect(() => {
     const items = localStorage.getItem("items");
@@ -51,7 +52,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="/signin" className="nav-link">
+                <a onClick={() => navigate("/signin")} className="nav-link">
                   {login_state === true ? 'Your Dashboard' : 'Login'}
                 </a>
               </li>
